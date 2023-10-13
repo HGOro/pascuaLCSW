@@ -21,13 +21,15 @@ body {
     width: 550px;
     height: 300px;
     background-color: #faf9f6;
+    border: 2px solid black;
+    padding: 5% solid green;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 3);
     transform-style: preserve-3d;
     position: relative;
     transition: transform 1s;
 }
 
-.card-wrapper:hover .card {
+.card-wrapper:active .card {
     transform: rotateY(180deg);
 }
 
@@ -51,7 +53,16 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.details {
+    padding: 5px;
+}
+
+.description {
+    padding-top: 15px;
+    font-style: italic;
 }
